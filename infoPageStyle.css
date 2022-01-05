@@ -1,0 +1,268 @@
+* {
+            --fontSecond: #C9CCD0;
+            --prime-color: #1C232C;
+            --background: #F5F5F5;
+            --side-background: #448391;
+            --meun-background:#14181f;
+            --hover-color:#448390;
+            --scroll-bar: #E3A237;
+        }
+        
+        .image img,
+        .my img {
+            border-radius: 50%;
+        }
+        
+       
+        .profile {
+            width: 100%;
+            position: relative;
+            transform: translateX(-4%);
+        }
+        
+        .profile .my {
+            width: 35%;
+            float: left;
+            color: var(--prime-color);
+            display: inline-table;
+            margin-left: 10%;
+        }
+        
+        .profile .editName {
+            position: relative;
+            display: inline-table;
+            margin-left: 3%;
+            top: 45%;
+            font-size: 160%;
+            transform: translateY(10%);
+            width: 50%;
+            float: left;
+        }
+        
+        .profile .editName a {
+            color: var(--fontSecond);
+            display: block;
+            text-decoration: none;
+            cursor: pointer;
+            margin-top: 16px;
+        }
+        
+        /* ///////////////////////content/////////////////// */
+        
+        .content {
+position: fixed;
+    background-color: var(--background);
+    width: 100%;
+    top: 0px;
+    left: 0;
+    height: 100%;
+}
+        }
+        
+        .content .edit {
+            top: 5vh;
+            float: right;
+            right: 2%;
+            z-index: 3;
+        }
+        
+        .content .form {
+            width: 55%;
+            float: left;
+            color: var(--prime-color);
+            /* font-size: 235%; */
+            position: absolute;
+            top: 40vh;
+            transform: translateY(-50%);
+            margin: 0px 3vw;
+        }
+        
+        .content .image {
+            width: 40%;
+            float: right;
+            position: relative;
+            top: 40vh;
+            right: -5%;
+            transform: translateY(-50%);
+        }
+        /* .image img:before {
+            content: "";
+            display: block;
+            padding-top: 100%;
+        } */
+        
+        .image .v {
+            width: 25vw;
+            height: 25vw;
+        }
+        
+        .content .image input[type="file"] {
+            position: absolute;
+            bottom: 6.5%;
+            right: 29%;
+            width: 5vw;
+            filter: alpha(opacity=0);
+            opacity: 0;
+            height: 6vh;
+            z-index: 3;
+            cursor: pointer;
+        }
+        
+        .content .image span {
+            position: absolute;
+            z-index: 1;
+            bottom: 4.5%;
+            right: 30.5%;
+            cursor: pointer;
+        }
+        
+        .form div {
+            margin: 3vh;
+        }
+        
+        .form span {
+            display: inline-block;
+            font-size: 215%;
+            background-color: var(--background);
+        }
+        
+        .form input[type="text"] {
+            padding: 0px 1.2vw;
+            border-width: 0;
+            display: inline-block;
+            font-size: 200%;
+            transition: 0.4S;
+            background-color: var(--background);
+            width: 70%;
+        }
+        
+        #phone,
+        #address {
+            width: 56%;
+        }
+        
+        .form input[type="text"]:focus {
+            outline: none;
+            border: 2px solid var(--prime-color);
+            border-radius: 25px;
+            background-color: rgb(240, 236, 236);
+        }
+        /* form {
+            width: 70vw;
+            height: 100%;
+        } */
+        
+        .button {
+            position: absolute;
+            bottom: 7%;
+            left: 4%;
+            min-width: 40%;
+        }
+        
+        .save,
+        .cancel {
+            font-size: 110%;
+            width: 5vw;
+            height: 4vh;
+            color: var(--prime-color);
+            border-radius: 25px;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+            margin: 2%;
+            min-width: 104px;
+            min-height: 37px;
+        }
+        
+        .cancel {
+            background: #E16031;
+        }
+        
+        .save {
+            background: #F49C2D;
+        }
+        
+        .save:focus,
+        .cancel:focus {
+            outline: none;
+        }
+        
+        .cancel:hover {
+            background-color: rgb(206, 78, 32);
+        }
+        
+        .save:hover {
+            background: rgb(240, 147, 33);
+        }
+        
+        .save:active,
+        .cancel:active {
+            transform: translateY(3%);
+            border: 0 solid transparent;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+        }
+        
+        .edit {
+            position: relative;
+            float: right;
+            right: 2%;
+            background: transparent;
+            cursor: pointer;
+        }
+        
+        .edit:active {
+            transform: translateY(3%);
+            border: 0 solid transparent;
+        }
+        
+        .active {
+            display: none;
+        }
+        /* /////////responsive /////// */
+        
+        @media only screen and (max-width: 900px) {
+            /* ///////////////////con////////////// */
+            .content {
+                width: 86%;
+            }
+        
+            .content .image {
+                float: none;
+                width: 100%;
+                top: 20vh;
+                right: -31%;
+            }
+            .image .v {
+                width: 35vw;
+                height: 35vw;
+            }
+            .content .form {
+                width: 100%;
+                float: none;
+                top: 60vh;
+                display: block;
+            }
+            .form span {
+                font-size: 150%;
+            }
+            .button {
+                width: 100%;
+                bottom: 2.5%;
+            }
+            .save {
+                margin-right: 13vw;
+            }
+            .form input[type="text"] {
+                width: 75%;
+                font-size: 150%;
+            }
+            .content .image span {
+                right: 59%;
+                bottom: 6.5%;
+            }
+            .content .image input[type="file"] {
+                right: 61%;
+                bottom: 0%;
+            }
+            #phone{
+                width: 50%;
+                }
+        }

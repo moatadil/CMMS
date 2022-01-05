@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <meta charset="UTF-8" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="employee.css">
+    
+</head>
+
+<body>
+
+    <!-- add and remove sign for employee. -->
+    
+    <div class="content">
+        <div class="addinfo">
+            <button id="add" onclick="document.getElementById('id01').style.display='block';"><img src="image/plus.png"></button>
+            <button id="remove" onclick="document.getElementById('id02').style.display='block';"><img src="image/minus.png"></button>
+            <div id="id01" class="modal">
+                <div class="pop">
+                    <form>
+                        <div class="input">
+                            <input type="text" placeholder="User ID" ><br>
+                            <input type="password" placeholder="password">
+                        </div>
+                        <menu>
+                            <button id="add" value="default" style="background:#F49C2D">Add</button>
+                            <button value="cancel" style="background:#E16031">Cancel</button>
+                        </menu>
+                    </form>
+                </div>
+              
+            </div>
+            
+            <div id="id02" class="modal">
+                <div class="pop">
+                    <form>
+                        <div class="input">
+                            <input type="text" placeholder="User Name To Remove" ><br>
+                        </div>
+                        <menu>
+                            <button id="confirmBtn" value="default" style="background:#F49C2D">Confirm</button>
+                            <button value="cancel" style="background:#E16031">Cancel</button>
+                        </menu>
+                    </form>
+                </div>
+              
+            </div>
+        </div>
+        
+        
+        <div class="info">
+            <div class="rectangle">
+                <img src="image/myicon.png"></img>
+                <div>name</div>
+                <div>specialty</div>
+            </div>
+            <div class="rectangle">
+                <img src="image/myicon.png">
+                <div>name</div>
+                <div>specialty</div>
+            </div>
+            <div class="rectangle">
+                <img src="image/myicon.png">
+                <div>name</div>
+                <div>specialty</div>
+            </div>
+            
+            <div class="rectangle">
+                <img src="image/myicon.png">
+                <div>name</div>
+                <div>specialty</div>
+            </div>
+            <div class="rectangle">
+                <img src="image/myicon.png">
+                <div>name</div>
+                <div>specialty</div>
+            </div>
+            <div class="rectangle">
+                <img src="image/myicon.png">
+                <div>name</div>
+                <div>specialty</div>
+            </div>
+        </div>
+    
+    </div>
+    <script src="emp.js"></script>
+    
+</body>
+
+</html>

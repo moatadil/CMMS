@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <meta charset="UTF-8" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="part.css">
+    
+</head>
+
+<body>
+
+    <!-- add and remove sign for employee. -->
+    
+    <div class="content">
+        
+        <div class="addinfo">
+            
+            <button id="add" onclick="document.getElementById('id01').style.display='block';"><img src="image/plus.png"></button>
+            <button id="remove" onclick="document.getElementById('id02').style.display='block';"><img src="image/minus.png"></button>
+            <div id="id01" class="modal">
+                <div class="pop">
+                    
+                    <form>
+                        <div class="input">
+                            <input type="text" placeholder="part Name" ><br>
+                            <input type="text" placeholder="brand">
+                            <span>
+                                <input type="text" placeholder="Part Id">
+                                <input type="number" placeholder="cont">
+                            </span>
+                            
+                            <input type="text" placeholder="Merchant">
+                            <input type="text" placeholder="Merchant Number">
+                        </div>
+                        <menu>
+                            <button id="add" value="default" style="background:#F49C2D">add</button>
+                            <button value="cancel" style="background:#E16031">Cancel</button>
+                        </menu>
+                    </form>
+                </div>
+              
+            </div>
+            
+            <div id="id02" class="modal">
+                <div class="pop">
+                    <form>
+                        <div class="input">
+                            <input type="text" placeholder="Part ID to remove" ><br>
+                        </div>
+                        <menu>
+                            <button id="confirmBtn" value="default" style="background:#F49C2D">Confirm</button>
+                            <button value="cancel" style="background:#E16031">Cancel</button>
+                        </menu>
+                    </form>
+                </div>
+              
+            </div>
+            
+        <input type="text" name="search" placeholder="search">
+        </div>
+        <table>
+          <tr>
+            <th class="moreDetail">
+                <button class="details" ><img src="image/det.png"></button>
+                <div>NO.PART</div>
+            </th>
+            
+            <th>NAME PART</th>
+            <th>COUNT IN STOCK</th>
+            <th>NAME OF the merchant</th>
+            <th class="brands"><img src="brand/bmw.png" ></th>
+            <tr style="display: none" id="more">
+                <th>NUMBER</th>
+                <th>DATE</th>
+                <th>count</th>
+            </tr>
+          </tr>
+          
+          <tr>
+            <td class="moreDetail">
+                <button class="details" ><img src="image/det.png"></button>
+                <div>111</div>
+            </td>
+            
+            <td>engine</td>
+            <td>10</td>
+            <td>osama</td>
+            <th class="brands"><img src="brand/opel.png" ></th>
+            <tr style="display: none" id="more">
+                <td>059999999</td>
+                <td>27/4/2020</td>
+                <td>5</td>
+            </tr>
+          </tr>
+          
+          <tr>
+            <td class="moreDetail">
+                <button class="details" ><img src="image/det.png"></button>
+                <div>222</div>
+            </td>
+            
+            <td>gear</td>
+            <td>20</td>
+            <td>akram</td>
+            <th class="brands"><img src="brand/mercedes.png" ></th>
+            <tr style="display: none" id="more">
+                <td>059999999</td>
+                <td>27/4/2020</td>
+                <td>10</td>
+            </tr>
+          </tr>
+          
+          <tr>
+            <td class="moreDetail">
+                <button class="details" ><img src="image/det.png"></button>
+                <div>333</div>
+            </td>
+            
+            <td>oil</td>
+            <td>30</td>
+            <td>moatadil</td>
+            <th class="brands"><img src="brand/audi.png" ></th>
+            <tr style="display: none" id="more">
+                <td>0566669666</td>
+                <td>27/4/2020</td>
+                <td>20</td>
+            </tr>
+          </tr>
+          
+          <tr>
+            <td class="moreDetail">
+                <button class="details" ><img src="image/det.png"></button>
+                <div>444</div>
+            </td>
+            
+            <td>terbo</td>
+            <td>10</td>
+            <td>hamza</td>
+            <th class="brands"><img src="brand/ford.png" ></th>
+            <tr style="display: none" id="more">
+                <td>059999999</td>
+                <td>27/4/2020</td>
+                <td>5</td>
+            </tr>
+          </tr>
+          
+          <tr>
+            <td class="moreDetail">
+                <button class="details" ><img src="image/det.png"></button>
+                <div>555</div>
+            </td>
+            
+            <td>engine</td>
+            <td>10</td>
+            <td>khalid</td>
+            <th class="brands"><img src="brand/opel.png" ></th>
+            <tr style="display: none" id="more">
+                <td>059999999</td>
+                <td>27/4/2020</td>
+                <td>5</td>
+            </tr>
+          </tr>
+          
+          <tr>
+            <td class="moreDetail">
+                <button class="details" ><img src="image/det.png"></button>
+                <div>666</div>
+            </td>
+            
+            <td>filter</td>
+            <td>10</td>
+            <td>husam</td>
+            <th class="brands"><img src="brand/opel.png" ></th>
+            <tr style="display: none" id="more">
+                <td>059999999</td>
+                <td>27/4/2020</td>
+                <td>5</td>
+            </tr>
+          </tr>
+        </table>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="emp.js"></script>
+    
+</body>
+
+</html>

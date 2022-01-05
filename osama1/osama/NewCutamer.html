@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="..\CSS osama\menuStyle.css">
+  <link rel="stylesheet" type="text/css" href="..\CSS osama\homePageContant.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <script src="..\js osama\clock.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.js"></script>
+
+
+
+
+  <title></title>
+</head>
+
+<body onload="startTime()" style="overflow-y: scroll;">
+  <div class="row">
+    <div class="col-sm-11 ">
+      <b>
+        <p style="text-align: right;margin-right: 2%; margin-top: 2%;" id="demo"></p>
+      </b>
+    </div>
+  </div>
+  <div class="container">
+    <form action="NewCutamer.php" method="POST">
+
+      <div class="row">
+        <div class="col-sm-2">
+          <label for="pwd">Custamer name:</label>
+        </div>
+
+        <div class="col-sm-4">
+          <p class="formRight">
+            <input type="text" class="form-control" name="CustamerName" id="usr">
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-2">
+          <label for="pwd">Custamer ID:</label>
+        </div>
+
+        <div class="col-sm-4">
+          <p class="formRight">
+            <input type="text" class="form-control" name="CustamerID" id="usr">
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2">
+          <label for="pwd">Phone number:</label>
+        </div>
+
+        <div class="col-sm-4">
+          <p class="formRight">
+            <input type="text" class="form-control" name="PhoneNumber" id="usr">
+          </p>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2">
+          <label for="pwd">Address:</label>
+        </div>
+
+        <div class="col-sm-4">
+          <p class="formRight">
+            <select id="leadType" class="box2" name="Address">
+              <option data-tokens="nables mustard">nables</option>
+              <option data-tokens="BBBBB">BBBBB</option>
+              <option data-tokens="CCCCC">CCCCC</option>
+              <option data-tokens="DDDDD">DDDDD</option>
+              <option data-tokens="FFFFF">FFFFF</option>
+              <option data-tokens="GGGGG">GGGGG</option>
+            </select>
+          </p>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-2">
+          <label for="pwd">Email:</label>
+        </div>
+
+        <div class="col-sm-4">
+          <p class="formRight">
+            <input type="text" class="form-control" name="Email" id="usr">
+          </p>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="d-flex align-items-start flex-column">
+            <button type="button" name="submit" class="bodybuttonaadd">Add</button>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="d-flex align-items-end flex-column">
+            <a href='home.html'>
+              <button type="button" class="bodybuttoncancel">Cancel</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+</body>
+
+</html>

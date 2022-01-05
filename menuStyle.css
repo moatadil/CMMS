@@ -1,0 +1,274 @@
+@charset "utf-8";
+/* CSS Document */
+ * {
+            --fontSecond: #C9CCD0;
+            --prime-color: #1C232C;
+            --background: #F5F5F5;
+            --side-background: #448391;
+            --meun-background:#14181f;
+            --hover-color:#448390;
+            --scroll-bar: #E3A237;
+        }
+body{
+	background-color: var(--background);
+	overflow: hidden;
+	 font-family: Roboto;
+}
+iframe{
+	 height:100%; 
+	 width:100%;
+	 border: none;
+}
+.d1{
+	position: absolute;
+	background-color: var(--background);
+	width: 82%;
+	right: 0%;
+	height: 100%;
+}
+#cmms{
+	position: absolute;
+	color:var(--fontSecond);
+	margin-top:-5%;
+	width: 100%;
+	font-size: 3.6vw;
+}
+#line{
+	position: absolute;
+	background-color: var(--fontSecond);
+	color:var(--fontSecond);
+	border: 0.1vw solid;
+	margin: 2% 1% 0 2%;
+	top:7vh;
+	width: 105% ;
+}
+#img1{
+	width:35%;
+	height: 90%;
+	margin-top: -1.5vh;
+	margin-left: -2%;
+	float: left;
+}
+#img2{
+	height: 70%;
+	width:30%;
+	border-radius: 50%;
+	margin-top: 1.5%;
+	float: left;
+	transition-duration: 1s;
+}
+#name{
+	position: absolute;
+	width: 68%;
+	color:var(--fontSecond);
+	font-size: 1.3vw;
+	padding-top: 1vh;
+	padding-left: 33%;
+}
+
+.menu{
+	position: fixed;
+	margin:-8px 0 0 -8px; 
+	height:100%;
+	width: 17%;
+	background-color: var(--meun-background);
+	border: 0px;
+	border-radius:0 20px 20px 0;
+    transition-duration: 1s;
+}
+
+#buttonLogout{
+	width: 18%;
+	padding-left: 5%;
+	filter: invert(100%); 
+	-webkit-filter:invert(20%);
+	transition-duration: 1s;
+}
+.secandDiv{
+	position: relative;
+	width: 90%;
+	height: 10vh;
+	top: 2.5%;
+	
+}
+.thiredDiv{
+position: fixed;
+top:15vh;
+width: 16%;
+height: 15%;
+margin-left: 0.5%;
+ transition-duration: 1s;
+}
+
+.buttonlog{
+	position: absolute;
+	border:none;
+	border-radius: 0.2vw;
+	text-decoration: none;
+	background: none;
+	top: 50%;
+	color:var(--fontSecond);
+	font-size: 1vw;
+	width: 30%;
+	height: 20%;
+    margin-left:3%; 
+	outline: none;
+}
+.buttonlog:hover {
+  background-color: var(--hover-color);
+  box-shadow: 0 8px 10px 0 rgba(130,0,0,0.24), 0 12px 20px 0 rgba(0,0,0,0.19);}
+
+#myDIV{
+	position: fixed;
+	margin-top: 0.5px;
+	bottom: 10vh;
+	height: 60%;
+	display: block;
+}
+.buttonMenu {
+    position: relative;
+    border:none;
+    background: none;
+    border-radius: 2px;
+    text-decoration: none;
+    width: 17vw;
+    height: 6vh;
+    top: 2%;
+    left: -0.5vw;
+    margin-top: 2%;
+    outline: none;
+    display: block;
+     transition-duration: 1s;
+
+}
+
+.act, .buttonMenu:hover {
+  background-color: var(--hover-color);
+  box-shadow: 0 8px 10px 0 rgba(130,0,0,0.24), 0 12px 20px 0 rgba(0,0,0,0.19);
+}
+.buttonIcon{
+	float: left;
+	height: 4vh;
+	width: 12%;
+	padding-left: 2vw;
+	padding-top: 2%;
+	margin-right: 10%;
+	filter: invert(100%); 
+	-webkit-filter:invert(20%);
+
+}
+
+.buttonText{
+	position: relative;
+	color:var(--fontSecond);
+	font-size: 1.88vw;
+	top: 10%;
+	transition-duration: 1s;
+}
+.setting{
+	position: absolute;
+	border:none;
+	border-radius: 20px;
+	background: none;
+	outline: none;
+	height: 2vw;
+	width: 2vw;
+	bottom: -14%;
+	left: 83%;
+    transition-duration: 1s;
+}
+.setting:hover {
+ transform: rotate(-180deg);
+}
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: var(--meun-background);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-bar); 
+  border-radius: 5px;
+}
+
+.buttonlogdown{
+	display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+.menu{
+	width: 50px;
+	height: 100vh;
+}
+#name{
+	display: none;
+}
+#cmms{
+	display: none;
+}
+#img1{
+	width: 110%;
+	height: 70%;
+	margin-left: -6%;
+}
+#myDIV{
+	bottom: 20vh;
+}
+.buttonMenu{
+
+	width: 49px;
+	margin-top: 5px;
+	 left: -0.4vw;
+	 transition-duration: 0.4s;
+	top:0;
+}
+.buttonIcon{
+
+	width: 50%;
+	height: 70%;
+	padding-left: 25%;
+	padding-top: 5px;
+}
+.buttonText{
+	display: none;
+}
+.setting{
+	height: 20px;
+	width: 20px;
+	left: 11px;
+	bottom: -18vh;
+}
+.buttonlogdown{
+position: absolute;
+	display: flex;	
+	background: none;
+	outline: none;
+	height: 17px;
+	width: 17px;
+	bottom: -22%;
+	left: 15px;
+}
+
+#line{
+	top:65%; 
+	margin: 0 2% 0 2%;}
+#img2{
+	height: 45px;
+	width:45px;
+	margin-left:  -1%;
+	margin-top: -20px;
+
+}
+
+.buttonlog{
+	display: none;}
+	 }
+
+	 }
+@media only screen and (max-height: 1100px) {
+.buttonIcon{
+	height: 20px;
+}
+}
+

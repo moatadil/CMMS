@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="..\CSS osama\menuStyle.css">
+  <link rel="stylesheet" type="text/css" href="..\CSS osama\homePageContant.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <script src="..\js osama\clock.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.js"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="..\CSS osama\problem.css">
+
+  <title></title>
+</head>
+
+<body onload="startTime()" style="overflow-y: scroll;">
+  <div class="row">
+    <div class="col-sm-11 ">
+      <b>
+        <p style="text-align: right;margin-right: 2%; margin-top: 2%;" id="demo"></p>
+      </b>
+    </div>
+  </div>
+  <div class="container">
+
+    <form action="NewService.php" method="POST">
+      <div class="row">
+        <div class="col-sm-12">
+
+          <div class="d-flex align-items-end flex-column">
+            <div class="col-sm-4">
+              <label for="pwd">Owner name:</label>
+              <p class="formRight">
+                <input type="text" class="form-control" name="OwnerName" value="palte no." id="usr">
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8">
+          <label for="comment">Describe the problem from a customer:</label>
+          <textarea class="form-control form-rounded" name="DescribeCustomer"
+            style="border-radius:20px ; border: 2px solid;" rows="6"></textarea>
+        </div>
+
+
+        <div class="col-sm-4 bodyDivs2O1">
+          <h1 style="text-align: center;font-size: 500%;">%10</h1>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div style="margin-top:20px ;" class="col-sm-6">
+          <label for="pwd">last service:</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <label for="pwd">last kilometer:</label>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col-sm-4">
+          <p class="formRight">
+            <input type="text" class="form-control" name="LastKilometer" id="usr">
+          </p>
+        </div>
+        <div class="col-sm-2">
+          <button type="button" class="bodybuttonC"><i class="fa fa-calculator"
+              style="font-size: large; color: #fff;"></i>
+          </button>
+        </div>
+
+      </div>
+
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="d-flex align-items-start flex-column">
+            <button type="button" class="bodybuttonaadd">Add</button>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="d-flex align-items-end flex-column">
+            <a href='home.html'>
+              <button type="button" class="bodybuttoncancel">Cancel</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </form>
+    <p id="demo"></p>
+    <div class="container mt-3">
+      <input class="form-control" id="myInput" type="text" placeholder="Search..">
+      <br>
+      <table id="table" class="table table-bordered">
+        <thead>
+          <tr>
+            <th>problem</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody id="myTable" onclick="myfun()">
+          <tr>
+
+
+            <td>John</td>
+            <td>33$</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>77$</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>140$</td>
+          </tr>
+          <tr>
+            <td>Anja</td>
+            <td>372$</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr style="border:3px solid #ee510f; border-radius: 50px;">
+      <table id="Table" class="table table-bordered">
+
+        <tr>
+          <th>problem</th>
+          <th>Price</th>
+        </tr>
+      </table>
+
+      <script>
+        function myfun() {
+          var table = document.getElementById('table');
+          var table1 = document.getElementById("Table");
+          var row = table1.insertRow(-1);
+          var cell1 = row.insertCell(0);
+          var cell2 = row.insertCell(1);
+
+          for (var i = 0; i < table.rows.length; i++) {
+            table.rows[i].onclick = function () {
+              cell1.innerHTML = this.cells[0].innerHTML;
+              cell2.innerHTML = this.cells[1].innerHTML;
+
+            };
+          }
+        }
+      </script>
+    </div>
+  </div>
+
+  <script>
+
+    $(document).ready(function () {
+
+      $("#myInput").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function () {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

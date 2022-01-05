@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="infoPageStyle.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <title>information page</title>
+    <link rel="icon" href="image\car.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="content">
+        <form method="POST">
+            <div class="edit" onclick="edit();"><img src="image/edit.png"></div>
+
+            <div class="image">
+
+                <img class="v" src="image/download.jpeg">
+                <span class="active"><img src="image/plus.png" width="90%"></span>
+                <input class="active" type="file" id="img" name="img" accept="image/*">
+
+            </div>
+            <div class="form">
+                <div>
+                    <span>Name :</span>
+                    <input type="text" id="editName" disabled>
+                    <!-- noor mohammad fade kalily</span> -->
+                </div>
+                <div>
+                    <span>ID :</span>
+                    <input type="text" id="id" disabled>
+                    <!-- 4 45456445</span> -->
+                </div>
+                <div>
+                    <span>Email :</span>
+                    <input type="text" id="email" disabled>
+                    <!-- noor125@gmail.com</input> -->
+                </div>
+                <div>
+                    <span>Address :</span>
+                    <input type="text" id="address" disabled>
+                    <!-- Nablus</span> -->
+                </div>
+                <div>
+                    <span style="font-size: 170%;">phone number :</span>
+                    <input type="text" id="phone" value="dsdsds" disabled>
+                    <!-- 05921358854</span> -->
+                </div>
+            </div>
+            <div class="button active">
+                <input type="submit" class="save" value="save">
+                <INPUT TYPE="button" onClick="history.go(0)" VALUE="cancel" class="cancel">
+            </div>
+        </form>
+    </div>
+    <script>
+        function edit() {
+            var dis = document.getElementsByClassName("active");
+            for (i = 0; i < dis.length; i++) {
+                dis[i].style.display = "block";
+                console.log(i);
+            }
+            document.getElementById("editName").disabled = false;
+            document.getElementById("id").disabled = false;
+            document.getElementById("email").disabled = false;
+            document.getElementById("address").disabled = false;
+            document.getElementById("phone").disabled = false;
+        }
+    </script>
+</body>
+</html>

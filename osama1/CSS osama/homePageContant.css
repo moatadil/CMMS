@@ -1,0 +1,187 @@
+@charset "utf-8";
+ * {
+            --fontSecond: #C9CCD0;
+            --prime-color: #1C232C;
+            --background: #F5F5F5;
+            --side-background: #448391;
+            --meun-background:#14181f;
+            --hover-color:#448390;
+            --scroll-bar: #E3A237;
+        }
+
+.bodyDivs{
+	display: inline-block;
+	height: 300px;
+	width: 70%;
+	background-color: var(--hover-color);
+	margin: 1%;
+	border-radius: 25px;
+
+}
+.bodyDivsO{
+	display: inline-block;
+	margin-left: 2%;
+	margin-right: 2%;
+	background-color: var(--hover-color);
+	border-radius: 25px;
+	color: #fff;
+
+}
+.bodyDivs2{
+	display: inline-block;
+	margin: 1%;
+	border-radius: 25px;
+	width: 270px;
+	height: 100%;
+	background-color:  #E3A237;
+}
+.rowButton{
+	margin-top: 5%;
+}
+.formRight select {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #E8E8E8 inset;
+    height: 40px;
+	padding: 10px;
+	width: 100%;
+	margin-bottom: 30px;
+}
+.formRight input {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #E8E8E8 inset;
+    height: 40px;
+	padding: 10px;
+	width: 100%;
+	margin-bottom: 30px;
+
+}
+.form-rounded {
+	border-radius: 50px;
+	}
+.bodybutton1{
+	text-align: center;
+	padding: 15px;
+	padding-left: 50px;
+	padding-right: 50px;
+	border-radius: 20px;
+	border: 3px solid #E3A237;
+	background-color:  #E3A237;
+
+}
+.bodybuttonaadd{
+	text-align: center;
+	padding: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+	border-radius: 20px;
+	border: 3px solid #fd9d00;
+	background-color:  #fd9d00;
+
+}
+.bodybuttonC{
+	text-align: center;
+	padding: 10px;
+	border-radius: 50px;
+	border: 3px solid #fd9d00;
+	background-color:  #fd9d00;
+
+}
+.bodybuttoncancel{
+	text-align: center;
+	padding: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+	border-radius: 20px;
+	color: #000;
+	border: 3px solid #ee510f;
+	background-color:  #ee510f;
+
+}
+
+.bodybutton1car{
+	text-align: center;
+	padding: 15px;
+	padding-left: 70px;
+	padding-right: 70px;
+	border-radius: 20px;
+	border: 3px solid #E3A237;
+	background-color:  #E3A237;
+
+}
+.bodyDivs2O{
+	display: inline-block;
+	border-radius: 25px;
+	background-color:  #E3A237;
+}
+.bodyDivs2O1{
+	display: inline-block;
+	border-radius: 25px;
+	background-color:  #C9CCD0;
+}
+
+
+.tables{
+	width:100%;
+	height: 100%
+
+}
+td{
+	padding-right: 4%;
+	padding-left: 6%;
+	font-size: 170%;
+	font: bold;
+	}
+	#Table{
+width:100%;
+height: 60%;
+margin-top:4%;
+}
+.carClass{
+	font-size: 1000%;
+	text-align: center;
+}
+	.tdright{
+		float: right;
+		margin-right: 6px;
+		padding-top: 10px;
+	} 
+	 @media only screen and (max-width: 1100px) {
+.bodyDivs2{
+	width: 44%;
+}
+.bodyDivs{
+	width: 90%;
+}
+	#Table{
+width:100%;
+height: 60%;
+margin-top:1%;
+}
+.carClass{
+	font-size: 1000%;
+	text-align: center;
+}
+}
+	 @media only screen and (max-width: 450px) {
+
+.bodyDivs{
+	width: 95%;
+}
+.bodyDivs2{
+	width: 95%;
+}
+	#Table{
+width:100%;
+height: 60%;
+margin-top:4%;
+}
+.carClass{
+	font-size: 150px;
+	text-align: center;
+}
+
+	 }
